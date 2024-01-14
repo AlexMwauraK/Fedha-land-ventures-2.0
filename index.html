@@ -50,6 +50,9 @@
     <!-- *******  Owl Carousel Links  ******* -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <!-- CDN LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-LC2+5THFIP6RqxHlu/8DM1mhg1F5tA9q4VsP5/4ZS3Q8G3jfENwuowPapqpl9HzAgSHLhLqIInLMw0fzJ2nCVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- stylesheets- js  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -149,8 +152,24 @@
       </script>
     </nav>
 </header>
-<div style="height: 9%;"></div> <!-- Create space equal to the header height -->
+<div style="height: 9%;" id="home"></div> <!-- Create space equal to the header height -->
+<!-- to top btn  -->
+<div class="scroll-button" id="scrollButton">
+  <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollButton = document.getElementById("scrollButton");
 
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollButton.style.display = "flex";
+      } else {
+        scrollButton.style.display = "none";
+      }
+    };
+  });
+</script>
 <!-- Contents -->
 <section class="slider">
     <div class="myslide fade">
@@ -390,6 +409,31 @@
               <h3><i class="fa-solid fa-paperclip"></i> Prime 100 x 100 plots</h3>
               <p>
                 Ufanisi Haven Kitengela is it, located just 2.5Km off Nairobi Namanga Highway and just 20 minutes drive from Kitengela CBD.
+              </p>
+              <!-- <ul>
+                <li><i class="fas fa-check-circle"></i>Cash Price - 2,200,000/= (Kes. 2.2M)</li>
+                <li><i class="fas fa-check-circle"></i>Size: 100x100 with Ready title deed</li>
+                <li><i class="fas fa-check-circle"></i>Instalments offer Kes. 2.5M deposit 25% balance payable in 6 months interest free.</li>
+              </ul> -->
+              <!-- <p>
+                We have free site visits every Wednesday and Saturday. Book early for logistical planning.
+              </p> -->
+              <a href="/page/Ufanisi_haven.html" class="read-more">
+                  View Property<i class="fa-solid fa-arrow-right">  </i>
+              </a>
+          </div>
+      </div>
+  </article>
+  <article>
+      <div class="article-wrapper">
+          <figure>
+              <img src="/img/Amani Gardens Malindi.webp" alt="Amani Gardens Malindi" />
+          </figure>
+          <div class="article-body">
+              <h2>Amani Garden Malindi</h2>
+              <h3><i class="fa-solid fa-paperclip"></i> Prime 100 x 100 plots</h3>
+              <p>
+                Amani Garden Malindi is yout slice of paradise, immerse yourself in the magic of costal living with 100 x 100 priced at ...
               </p>
               <!-- <ul>
                 <li><i class="fas fa-check-circle"></i>Cash Price - 2,200,000/= (Kes. 2.2M)</li>
