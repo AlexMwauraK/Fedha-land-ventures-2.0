@@ -158,17 +158,17 @@
   <a href="#home"><i class="fas fa-arrow-up"></i></a>
 </div>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var scrollButton = document.getElementById("scrollButton");
-
-    window.onscroll = function () {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollButton.style.display = "flex";
+  // scroll button show and hide on scrolling
+  window.onscroll = function() {myFunction()};
+  var header = document.getElementById("home");
+  var sticky = header.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      document.getElementById("scrollButton").style.display = "block";
       } else {
-        scrollButton.style.display = "none";
-      }
-    };
-  });
+        document.getElementById("scrollButton").style.display = "none";
+        }
+        }
 </script>
 <!-- Contents -->
 <section class="slider">
