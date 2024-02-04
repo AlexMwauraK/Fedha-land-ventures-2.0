@@ -46,10 +46,14 @@
     <!-- links -->
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/property.css">
     <!-- Testimonials  -->
     <!-- *******  Owl Carousel Links  ******* -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <!-- CDN LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-LC2+5THFIP6RqxHlu/8DM1mhg1F5tA9q4VsP5/4ZS3Q8G3jfENwuowPapqpl9HzAgSHLhLqIInLMw0fzJ2nCVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- stylesheets- js  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -64,9 +68,9 @@
     <header>
         <nav>
             <div class="contacts">
-                    <i class="fas fa-phone"></i><a href="Tel: +254798384040" style="font-weight: bold;">0798384040</a>
-                    <i class="fas fa-envelope"></i><a href="mailto:fedhalandventures@gmail.com">info@fedhalandventures</a>
-                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Fedha+Land+Ventures/@-1.1471466,36.9584616,19z/data=!4m6!3m5!1s0x182f474b80c7eeff:0xcc6b79a45ed5fc75!8m2!3d-1.1470355!4d36.959198!16s%2Fg%2F11stj96z1b?entry=ttu" target="_blank">Address</a>
+                    <a href="Tel: +254798384040">+254-798-384-040<i class="fas fa-phone"></a></i>
+                    <a href="mailto:fedhalandventures@gmail.com">info@fedhalandventures<i class="fas fa-envelope"></a></i>
+                    <a href="https://www.google.com/maps/place/Fedha+Land+Ventures/@-1.1471466,36.9584616,19z/data=!4m6!3m5!1s0x182f474b80c7eeff:0xcc6b79a45ed5fc75!8m2!3d-1.1470355!4d36.959198!16s%2Fg%2F11stj96z1b?entry=ttu" target="_blank">Address<i class="fas fa-map-marker-alt"></a></i>
             </div>
             <div class="medialinks">
                 <a href=""><i class="fas fa-search"></i></a>
@@ -86,7 +90,7 @@
         <div class="navigationlinks">
             <ul class="navlinks">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/page/properties.html">Properties</a></li>
+                <li><a href="/page/Property_menu.html">Properties</a></li>
                 <li><a href="/page/About us.html">About Us</a></li>
                 <li><a href="/page/contact.html">Contact</a></li>
                 <li class="dropdown">
@@ -149,83 +153,296 @@
       </script>
     </nav>
 </header>
-<div style="height: 9%;"></div> <!-- Create space equal to the header height -->
+<div style="height: 9%;" id="home"></div> <!-- Create space equal to the header height -->
+<!-- to top btn  -->
+<div class="scroll-button" id="scrollButton">
+  <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+<script>
+  // scroll button show and hide on scrolling
+  window.onscroll = function() {myFunction()};
+  var header = document.getElementById("home");
+  var sticky = header.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      document.getElementById("scrollButton").style.display = "block";
+      } else {
+        document.getElementById("scrollButton").style.display = "none";
+        }
+        }
+</script>
+<!-- Contents -->
+<section class="slider">
+    <div class="myslide fade">
+        <div class="txt">
+          <!-- <h1></h1>
+          <p>Fedha Land Ventures</p> -->
+        </div>
+        <img src="/img/banner/a.webp" alt="banners">
+      </div>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <!-- <h1></h1>
+          <p>INVEST WITH US NOW!!</p> -->
+        </div>
+        <img src="/img/banner/b.webp" alt="banners">
+      </div>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <!-- <h1></h1>
+          <p>WHERE DREAMS FIND THEIR ADDRESS</p> -->
+        </div>
+        <img src="/img/banner/a.webp" alt="banners">
+      </div>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <!-- <h1></h1>
+          <p>OPENING NEW HORAIZONS IN PROPERTY AQUISITION</p> -->
+        </div>
+        <img src="/img/banner/b.webp" alt="banners">
+      </div>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <!-- <h1></h1>
+          <p>BUY & BUILD NOW</p> -->
+        </div>
+        <img src="/img/banner/a.webp" alt="banners">
+      </div>
+      <!-- /fade css -->
+      
+      <!-- onclick js -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <!-- /onclick js -->
 
-<!-- property cards -->
-<section class="articles" style="padding-top: 118px;">
-  <article>
-      <div class="article-wrapper">
-          <figure>
-              <img src="/img/banner/property/a.webp" alt="" />
-          </figure>
-          <div class="article-body">
-              <h2>Fadhili Garden Makutano</h2>
-              <h3><i class="fa-solid fa-paperclip"></i> Prime 50 x 100 plots</h3>
-              <p>
-                Are you looking for prime land to build your dream home not far from Nairobi? Fadhili Garden Makutano - Phase 1 is the place.
-              </p>
-              <ul>
-                <li><i class="fas fa-check-circle"></i>Cash offer Ksh 299,000/= (Christmas Offer)</li>
-                <li><i class="fas fa-check-circle"></i>Payment plan inclusive of title deed fee</li>
-                <li><i class="fas fa-check-circle"></i>Installments offer Ksh 350,000/= deposit 100k pay balance in 6 months interest free.</li>
-              </ul>
-              <p>
-                We have free site visits every Wednesday and Saturday. Book early for logistical planning.
-              </p>
-              <a href="/page/properties.html" class="read-more">
-                 View Property<i class="fa-solid fa-arrow-right"></i>
-              </a>
-          </div>
-      </div>
-  </article>
-  <article>
-      <div class="article-wrapper">
-          <figure>
-              <img src="/img/ufanisi_haven.webp" alt="" />
-          </figure>
-          <div class="article-body">
-              <h2>Ufanisi Haven Kitengela</h2>
-              <h3><i class="fa-solid fa-paperclip"></i> Prime 100 x 100 plots</h3>
-              <p>
-                Ufanisi Haven Kitengela is it, located just 2.5 kilometers off Nairobi Namanga Highway and just 20 minutes drive from Kitengela CBD.
-              </p>
-              <ul>
-                <li><i class="fas fa-check-circle"></i>2,000,000/= (Kes. 2.2M) (Christmas Offer)</li>
-                <li><i class="fas fa-check-circle"></i>Size: 100x100 with Ready title deed</li>
-                <li><i class="fas fa-check-circle"></i>Instalments offer Kes. 2.2M deposit 25% balance payable in 6 months interest free.</li>
-              </ul>
-          
-              <a href="/page/Ufanisi_haven.html" class="read-more">
-                  View Property<i class="fa-solid fa-arrow-right">  </i>
-              </a>
-          </div>
-      </div>
-  </article>
-  <article>
-      <div class="article-wrapper">
-          <figure>
-              <img src="/img/Amani Gardens Malindi.webp" alt="Amani Garden Malindi" />
-          </figure>
-          <div class="article-body">
-              <h2>Amani Garden Malindi</h2>
-              <h3><i class="fa-solid fa-paperclip"></i> Prime 100 x 100 and 50 x 100 plots</h3>
-              <p>
-                Amani Garden Malindi is it, located just 15 minutes away from Malidi town and touches the tarmacked Sala Gate bypass.
-              </p>
-              <ul>
-                <li><i class="fas fa-check-circle"></i>Cash Offer 150,000/=</li>
-                <li><i class="fas fa-check-circle"></i>Limited Offer 100,000/=</li>
-                <li><i class="fas fa-check-circle"></i>Size: 100x100 with Ready title deed</li>
-                <li><i class="fas fa-check-circle"></i>Book with Kes. 50,000/=  Deposit, balance payable in 6 months all interest free.</li>
-              </ul>
-          
-              <a href="/page/Ufanisi_haven.html" class="read-more">
-                  View Property<i class="fa-solid fa-arrow-right">  </i>
-              </a>
-          </div>
-      </div>
-  </article>
+      <script>
+        const myslide = document.querySelectorAll('.myslide'),
+        dot = document.querySelectorAll('.dot');
+      let counter = 1;
+      slidefun(counter);
+      
+      let timer = setInterval(autoSlide, 8000);
+      function autoSlide() {
+      counter += 1;
+      slidefun(counter);
+      }
+      function plusSlides(n) {
+      counter += n;
+      slidefun(counter);
+      resetTimer();
+      }
+      function currentSlide(n) {
+      counter = n;
+      slidefun(counter);
+      resetTimer();
+      }
+      function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(autoSlide, 8000);
+      }
+      
+      function slidefun(n) {
+      
+      let i;
+      for(i = 0;i<myslide.length;i++){
+        myslide[i].style.display = "none";
+      }
+      for(i = 0;i<dot.length;i++) {
+        dot[i].className = dot[i].className.replace(' active', '');
+      }
+      if(n > myslide.length){
+         counter = 1;
+         }
+      if(n < 1){
+         counter = myslide.length;
+         }
+      myslide[counter - 1].style.display = "block";
+      dot[counter - 1].className += " active";
+      }
+      </script>
 </section>
+
+
+
+
+
+<!--Description section  -->
+<div class="headings">
+  <p class="animate">Amani Garden Malindi<i class="fas fa-caret-down"></i><i class="fas fa-caret-down"></i><i class="fas fa-caret-down"></i></p>
+</div>
+
+  <div class="main-descriprion">
+      <div class="information">
+        <h3>Kes. 150,000/= </h3>
+        <P><i class="fas fa-check"></i> Limited offer @ 100,000/= <br>
+          Dream land Just 15 minutes away from Malindi town, and a short distance from Coco beach and Vasco Da Gama pillar.
+          Touching the tarmacked Sala Gate bypass connecting malindi to Voi, Best position to set up a filling station and has the best weather for any cosiderable farmer. Get your freehold title deed now!!
+        </P>
+        <p><i class="fas fa-check"></i>
+          Prime 100 x 100 plots.
+        </p>
+        <p><i class="fas fa-check"></i>
+          Prime 50 x 100 plots.
+        </p>
+        <p><i class="fas fa-check"></i>
+          Payment plan inclusive of title deed fee: <br>
+          💸 Kes. 150,000/= for cash buyers.<br>
+          ⌛ Book with Kes. 50,000/= deposit - balance payable in 6 months all interest free.<br>
+          📌 Note: prices are title fee inclusive.
+    
+        </p>
+      </div>
+    
+    <!-- Land Features   -->
+      <div class="features">
+        <table >
+          <tr>
+            <th>Features</th>
+          </tr>
+        <tr>
+          <td class="animate2">
+            1. Fully Beaconed & ready tittle deads
+          </td>
+        </tr>
+       
+        <tr>
+          <td class="animate2">
+            2. Water Available.      
+          </td>
+        </tr>
+       
+        <tr>
+          <td class="animate2">
+            3. Schools - Jilore Vocational training center & (Primary & Secondary).
+          </td>
+        </tr>
+       
+        <tr>
+          <td class="animate2">
+            4. All weather access roads.
+          </td>
+        </tr>
+        <tr>
+          <td class="animate2">
+            5. Electricity in Close Proximity.
+          </td>
+        </tr>
+       
+        <tr>
+          <td class="animate2">
+            6. Social Amenities - Mosques,Churches, Hospitals and Security in close proximity. 
+          </td>
+        </tr>
+       
+        </table>
+      </div>
+    </div>
+
+
+
+
+<!-- Buttons  -->
+<div class="sitevisit animate2">
+  <!-- <a href="/index.html" class="glink"><p class="btn1">View More Properties</p></a> -->
+  <a href="/page/booking.html" class="glink"><p class="btn2">Book Free site visit</p></a>
+</div>
+
+<!-- Accordion  -->
+<section class="saccordion">
+
+  <div class="accordion">
+    <div class="accordion-content animate2">
+      <div class="header">
+        <span class="title">More Info...</span>
+        <i class="fa-solid fa-plus"></i>
+      </div>
+
+      <p class="description">
+        <a href="https://www.google.com/maps/place/0%C2%B047'30.1%22S+37%C2%B018'09.9%22E/@-0.7914633,37.3017499,349m/data=!3m1!1e3!4m4!3m3!8m2!3d-0.791683!4d37.302753?entry=ttu" target="_blank">View precise location</a>
+      </p>
+      <p class="description">
+        <a href="
+        ">Subdivision map - Pdf</a>
+      </p>
+    </div>
+
+    <div class="accordion-content animate2">
+      <div class="header">
+        <span class="title">View Images</span>
+        <i class="fa-solid fa-plus"></i>
+      </div>
+
+      <p class="description images">
+          <!-- <img src="/img/property/1.webp" alt="photos fadhili garden">
+          <img src="/img/property/2.webp" alt="photos fadhili garden">
+          <img src="/img/property/3.webp" alt="photos fadhili garden">
+          <img src="/img/property/4.webp" alt="photos fadhili garden">
+          <img src="/img/property/5.webp" alt="photos fadhili garden">
+          <img src="/img/property/6.webp" alt="photos fadhili garden"> -->
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  const accordionContent = document.querySelectorAll(".accordion-content");
+  
+  accordionContent.forEach((item, index) => {
+    let header = item.querySelector(".header"); // Corrected header selection
+    header.addEventListener("click", () => {
+      item.classList.toggle("open");
+  
+      let description = item.querySelector(".description");
+      if (item.classList.contains("open")) {
+        description.style.height = `${description.scrollHeight}px`;
+        item.querySelector("i").classList.replace("fas fa-plus", "fas fa-minus"); // Corrected Font Awesome class
+      } else {
+        description.style.height = "0px";
+        item.querySelector("i").classList.replace("fas fa-minus", "fas fa-plus"); // Corrected Font Awesome class
+      }
+      removeOpen(index); // calling the function and passing the index number of the clicked header
+    });
+  });
+  
+  function removeOpen(index1) {
+    accordionContent.forEach((item2, index2) => {
+      if (index1 != index2) {
+        item2.classList.remove("open");
+  
+        let des = item2.querySelector(".description");
+        des.style.height = "0px";
+        item2.querySelector("i").classList.replace("fas fa-minus", "fas fa-plus"); // Corrected Font Awesome class
+      }
+    });
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -252,7 +469,7 @@
 		<ul class="box">
 		  <li class="link_name">Quick links</li>
 		  <li><a href="/index.html">Home</a></li>
-		  <li><a href="/page/Property_menu.html">Properties</a></li>
+		  <li><a href="page/properties.html">properties</a></li>
 		  <li><a href="/pages/About.html">About us</a></li>
 		  <li><a href="#">diaspora clients</a></li>
 		</ul>
@@ -345,15 +562,14 @@
     hiddenElements.forEach((el) => observer.observe(el));
 
     window.addEventListener('load', function () {
-  const preloader = document.querySelector('.preloader');
-  setTimeout(function () {
-    preloader.style.opacity = '0';
-    setTimeout(function () {
-      preloader.style.display = 'none';
-    }, 500); // Adjust the delay as needed
-  }, 1000); // Adjust the delay as needed
-  }); 
+      const preloader = document.querySelector('.preloader');
+      setTimeout(function () {
+        preloader.style.opacity = '0';
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500); // Adjust the delay as needed
+      }, 1000); // Adjust the delay as needed
+      }); 
 </script>
-
 </body>
 </html>
