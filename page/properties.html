@@ -46,11 +46,6 @@
                 <a href="https://www.linkedin.com/in/fedha-land-ventures-755b39286" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/fedhalandventures" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
-            <div class="whatsappmobi">
-              <a href="https://wa.me/+254798384040" target="_blank">
-                  <button class="whatsapp-button">Message<i class="fab fa-whatsapp"></i></button>
-              </a>
-          </div>
         </nav>
     
     <nav class="navdetail">
@@ -88,11 +83,6 @@
               </script>
         </div>
         <script src="/js/script.js"></script>
-        <div class="whatsapp">
-            <a href="https://wa.me/+254798384040" target="_blank">
-                <button class="whatsapp-button">Message<i class="fab fa-whatsapp"></i></button>
-            </a>
-        </div>
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -119,6 +109,34 @@
         });
         
       </script>
+      <div class="toggle-container">
+        <input type="checkbox" id="mode-toggle" class="toggle-checkbox">
+        <label for="mode-toggle" class="toggle-label">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+          <div class="toggle-handle"></div>
+        </label>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const modeToggle = document.getElementById("mode-toggle");
+        const body = document.body;
+
+        modeToggle.addEventListener("change", function() {
+            if (modeToggle.checked) {
+                body.classList.add("black-mode");
+                document.querySelectorAll('.dark-mode-target').forEach(function(div) {
+                    div.classList.add("black-mode");
+                });
+            } else {
+                body.classList.remove("black-mode");
+                document.querySelectorAll('.dark-mode-target').forEach(function(div) {
+                    div.classList.remove("black-mode");
+                });
+              }
+          });
+        });
+     </script>
     </nav>
 </header>
 <div style="height: 9%;"></div> <!-- Create space equal to the header height -->
