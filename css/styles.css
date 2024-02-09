@@ -586,7 +586,7 @@ nav ul li a:hover{
   display: flex;
   align-items: center;
   margin: 0 auto;
-  height: 4vh;
+  height: 22px;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -1728,6 +1728,7 @@ footer{
 }
 .black-mode article, .card{
   background: #141416;
+  border: .5px solid #333;
 }
 .black-mode .accordion-text li .question-arrow .question{
   color: unset;
@@ -1750,4 +1751,5 @@ footer{
 .black-mode .navlinks,
 .black-mode .conli a{
   background-color: #141416;
+  
 }
