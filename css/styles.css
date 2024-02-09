@@ -724,13 +724,11 @@ nav ul li a:hover{
   .medialinks .fa-search{
     display: none;
   }
-
-
   .toggle-container{
-    scale: 75%;
     position: absolute;
+    scale: 75%;
     top: 2px;
-    right: -10px;
+    right: -3px;
   }
   .brief {
     flex-direction: column;
@@ -1664,11 +1662,7 @@ footer{
   transition: background-color 0.5s ease, color 0.5s linear;
   color: #fff;
 }
-.toggle-container {
-  display: inline-block;
-  position: relative;
-  margin-right: 10px;
-}
+
 
 .toggle-checkbox {
   display: none;
@@ -1746,4 +1740,14 @@ footer{
 }
 .black-mode .accordion-text li p{
   color: #b8b8b8;
+}
+.black-mode .burger{
+  border: 1px solid #f1f1f1;
+}
+.black-mode .burger div{
+  background-color: #fff;
+}
+.black-mode .navlinks,
+.black-mode .conli a{
+  background-color: #141416;
 }
