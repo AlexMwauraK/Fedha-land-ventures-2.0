@@ -727,13 +727,13 @@ article, .cards{
   --link-icon-opacity: 0;
   position: relative;
   border-radius: 10px;
-  box-shadow: none;
+  border: 1px solid #8f8f8f36;
   background: #fff;
   transform-origin: center;
   transition: all 0.5s linear;
   overflow: hidden;
   width: 400px; 
-  height: 490px;
+  height: 460px;
 }
 .read-more{
   margin-top: 40px;

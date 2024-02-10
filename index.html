@@ -194,55 +194,43 @@
   <div class="myslide fade">
     <img src="/img/banner/a.webp" alt="banners">
   </div>
+  <script>
+const myslide = document.querySelectorAll('.myslide');
+let counter = 0; // Start from the first slide
+
+slidefun(counter); // Display the initial slide
+
+let timer = setInterval(autoSlide, 8000);
+
+function autoSlide() {
+    counter = (counter + 1) % myslide.length; // Increment counter and wrap around
+    slidefun(counter);
+}
+
+function plusSlides(n) {
+    counter = (counter + n + myslide.length) % myslide.length; // Ensure counter stays within range
+    slidefun(counter);
+    resetTimer();
+}
+
+function slidefun(n) {
+    for (let i = 0; i < myslide.length; i++) {
+        myslide[i].style.display = "none";
+    }
+    myslide[n].style.display = "block";
+}
+
+function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(autoSlide, 8000);
+}
+
+
+  </script>
       
   <!-- Next slider and prev -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      <script>
-        const myslide = document.querySelectorAll('.myslide'),
-        dot = document.querySelectorAll('.dot');
-      let counter = 1;
-      slidefun(counter);
-      
-      let timer = setInterval(autoSlide, 8000);
-      function autoSlide() {
-      counter += 1;
-      slidefun(counter);
-      }
-      function plusSlides(n) {
-      counter += n;
-      slidefun(counter);
-      resetTimer();
-      }
-      function currentSlide(n) {
-      counter = n;
-      slidefun(counter);
-      resetTimer();
-      }
-      function resetTimer() {
-      clearInterval(timer);
-      timer = setInterval(autoSlide, 8000);
-      }
-      
-      function slidefun(n) {
-      
-      let i;
-      for(i = 0;i<myslide.length;i++){
-        myslide[i].style.display = "none";
-      }
-      for(i = 0;i<dot.length;i++) {
-        dot[i].className = dot[i].className.replace(' active', '');
-      }
-      if(n > myslide.length){
-         counter = 1;
-         }
-      if(n < 1){
-         counter = myslide.length;
-         }
-      myslide[counter - 1].style.display = "block";
-      dot[counter - 1].className += " active";
-      }
-      </script>
 </section>
 <div class="carousel-container">
   <div class="carousel">
@@ -353,7 +341,7 @@
   <article class="cards">
       <div class="article-wrapper">
           <figure>
-              <img src="/img/banner/property/a.webp" alt="" />
+              <img src="/img/banner/property/a.webp" alt="Fadhili Garden properties" />
           </figure>
           <div class="article-body">
               <h2>Fadhili Garden Makutano</h2>
@@ -378,7 +366,7 @@
   <article>
       <div class="article-wrapper">
           <figure>
-              <img src="/img/ufanisi_haven.webp" alt="" />
+              <img src="/img/ufanisi_haven.webp" alt="Ufanisi Garden Properties" />
           </figure>
           <div class="article-body">
               <h2>Ufanisi Haven Kitengela</h2>
@@ -449,8 +437,7 @@
                         <h2>The Best</h2>
                     </div>
                     <p>
-                I would like to express my heartfelt gratitude for their exceptional services. I invested with them. The efficiency and professionalism they exhibited throughout the process were truly impressive. I applaud Fedha Land Properties for their commitment to delivering results promptly.
-              </p>
+                I would like to express my heartfelt gratitude for their exceptional services. I invested with them. The efficiency and professionalism they exhibited throughout the process were truly impressive.
                     <div class="ratings">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -479,7 +466,7 @@
                         <h2>Great deals</h2>
                     </div>
                     <p>
-                A big thank you to Fedha Land Properties for their outstanding services. I entrusted them with my investment. Their dedication and attention to detail have made the entire experience smooth and rewarding. Thus this is your efficient real estate solutions.
+                A big thank you to Fedha Land Properties for their outstanding services. I entrusted them with my investment. Their dedication and attention to detail have made the entire experience smooth and rewarding.
               </p>
                     <div class="ratings">
                         <i class="fa-solid fa-star"></i>
@@ -538,7 +525,7 @@
                         <h2>Amazing</h2>
                     </div>
                     <p>
-                Kudos to Fedha Land Properties for their outstanding performance. Investing with them was a wise decision. Their professionalism and dedication to customer satisfaction are unparalleled. I am grateful to have chosen them as my trusted partner in real estate.
+                Kudos to Fedha Land Properties for their outstanding performance. Investing with them was a wise decision. Their professionalism and dedication to customer satisfaction are unparalleled.
               </p>
                     <div class="ratings">
                         <i class="fa-solid fa-star"></i>
@@ -779,8 +766,7 @@
 		  <li class="link_name">Quick links</li>
 		  <li><a href="/index.html">Home</a></li>
 		  <li><a href="/page/Property_menu.html">Properties</a></li>
-		  <li><a href="/pages/About.html">About us</a></li>
-		  <li><a href="#">diaspora clients</a></li>
+		  <li><a href="/page/About us.html">About us</a></li>
 		</ul>
 		<ul class="box">
 		  <li class="link_name">Info</li>
@@ -800,8 +786,6 @@
 		  <li><a href="https://www.google.com/maps/place/Fadhili+Garden+Makutano+-+Phase+1/@-0.7923017,37.3003964,986m/data=!3m1!1e3!4m14!1m7!3m6!1s0x18261d690ca12527:0x41f8de466ba6c3d0!2sFadhili+Garden+Makutano+-+Phase+1!8m2!3d-0.791683!4d37.302753!16s%2Fg%2F11v0373b__!3m5!1s0x18261d690ca12527:0x41f8de466ba6c3d0!8m2!3d-0.791683!4d37.302753!16s%2Fg%2F11v0373b__?entry=ttu">Fadhili Garden Makutano</a></li>
 		  <li><a href="/page/Ufanisi_haven.html">Ufanisi Haven Kitengela</a></li>
 		  <li><a href="/page/Amani_garden.html">Amani Garden Malindi</a></li>
-		  <!-- <li><a href="#">kenya</a></li>
-		  <li><a href="#">nairobi</a></li> -->
 		</ul>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -847,8 +831,8 @@
 	  <div class="bottom_text">
 		<span class="copyright_text">Copyright &#169; 2023 <a href="#"></a>All rights reserved</span>
 		<span class="policy_terms">
-		  <a href="#">Privacy policy</a>
 		  <a href="#" class="terms-condition">Terms & condition</a>
+      <a href="https://lexcy.netlify.app" target="_blank">Developed by @lexcy.__</a>
 		</span>
 	  </div>
 	</div>
