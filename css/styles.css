@@ -1636,14 +1636,14 @@ footer{
   background-color: #fff;
 }
 .black-mode .navlinks,
-.black-mode .conli a{
-  background-color: #141416;
-  transition: 1s linear;
-}
+.black-mode .conli a,
+.black-mode .aboutus,
+.black-mode .contains,
 .black-mode .information,
 .black-mode .accordion,
 .black-mode .accordion-content:nth-child(-n+2){
-  background-color: #000;
+  background-color: #141416;
+  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19)s linear;
 }
 .black-mode tr:nth-child(even){
   background-color: #333;
@@ -1652,6 +1652,7 @@ footer{
   background-color: #090916;
 }
 .black-mode .headings p,
-.black-mode .accordion-content > .header .title{
+.black-mode .accordion-content > .header .title,
+.fa-plus{
   color: #fff;
 }
