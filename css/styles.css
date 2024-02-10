@@ -1640,3 +1640,18 @@ footer{
   background-color: #141416;
   transition: 1s linear;
 }
+.black-mode .information,
+.black-mode .accordion,
+.black-mode .accordion-content:nth-child(-n+2){
+  background-color: #000;
+}
+.black-mode tr:nth-child(even){
+  background-color: #333;
+}
+.black-mode tr:nth-child(odd){
+  background-color: #090916;
+}
+.black-mode .headings p,
+.black-mode .accordion-content > .header .title{
+  color: #fff;
+}

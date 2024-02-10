@@ -33,216 +33,213 @@
   <div class="preloader">
     <img src="/img/preloader.gif" alt="Loading...">
   </div>
-    <header>
-        <nav>
-            <div class="contacts">
-                    <i class="fas fa-phone"></i><a href="Tel: +254798384040">0798384040</a>
-                    <i class="fas fa-envelope"></i><a href="mailto:fedhalandventures@gmail.com">info@fedhalandventures</a>
-                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Fedha+Land+Ventures/@-1.1471466,36.9584616,19z/data=!4m6!3m5!1s0x182f474b80c7eeff:0xcc6b79a45ed5fc75!8m2!3d-1.1470355!4d36.959198!16s%2Fg%2F11stj96z1b?entry=ttu" target="_blank">Address</a>
-            </div>
-            <div class="medialinks">
-                <a href=""><i class="fas fa-search"></i></a>
-                <a href="https://www.instagram.com/fedhalandventures/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/fedha-land-ventures-755b39286" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/fedhalandventures" target="_blank"><i class="fab fa-facebook"></i></a>
-            </div>
-        </nav>
-    
-    <nav class="navdetail">
-        <div class="logo"><a href="/index.html"><img src="/img/logof.jpg" alt="logo"></a></div>
-        <div class="navigationlinks">
-            <ul class="navlinks">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/page/Property_menu.html">Properties</a></li>
-                <li><a href="/page/About us.html">About Us</a></li>
-                <li><a href="/page/contact.html">Contact</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle">Media<i class="fas fa-caret-down"></i></a>
-                    <!-- Dropdown content -->
-                    <div class="dropdown-content">
-                      <a href="/page/Gallery.html">Gallery</a>
-                      <a href="/page/Blog.html">Blog</a>
-                      <a href="/page/faqs.html">FAQs</a>
-                    </div>
-                </li>
-                <div class="conli">
-                  <i class="fas fa-phone"></i><a href="Tel: +254798384040" style="font-weight: bold;">0798384040</a>
-                    <i class="fas fa-envelope"></i><a href="mailto:fedhalandventures@gmail.com">@fedhalandventures</a>
-                </div>
-            </ul>
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                const dropdownToggle = document.querySelector(".dropdown-toggle");
-                const dropdownContent = document.querySelector(".dropdown-content");
-              
-                dropdownToggle.addEventListener("click", function (event) {
-                  event.preventDefault();
-                  dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
-                });
-              });          
-              </script>
+  <header>
+         <!-- navigationlinks at top :0 -->
+  <nav>
+    <div class="contacts">
+      <a href="Tel: +254798384040">+254-798-384-040<i class="fas fa-phone"></a></i>
+      <a href="mailto:fedhalandventures@gmail.com">info@fedhalandventures<i class="fas fa-envelope"></a></i>
+      <a href="https://www.google.com/maps/place/Fedha+Land+Ventures/@-1.1471466,36.9584616,19z/data=!4m6!3m5!1s0x182f474b80c7eeff:0xcc6b79a45ed5fc75!8m2!3d-1.1470355!4d36.959198!16s%2Fg%2F11stj96z1b?entry=ttu" target="_blank">Address<i class="fas fa-map-marker-alt"></a></i>
+    </div>
+    <div class="medialinks">
+      <a href="https://www.instagram.com/fedhalandventures/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/fedha-land-ventures-755b39286" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/fedhalandventures" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </nav>
+  <!-- navigation links bellow top :0 -->
+  <nav class="navdetail dark-mode-target">
+    <div class="logo"><a href="/index.html"><img src="/img/logof.jpg" alt="logo"></a></div>
+    <div class="navigationlinks">
+      <ul class="navlinks">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/page/Property_menu.html">Properties</a></li>
+        <li><a href="/page/About us.html">About Us</a></li>
+        <li><a href="/page/contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0);" class="dropdown-toggle">Media<i class="fas fa-caret-down"></i></a>
+          <!-- Dropdown content on navigation-->
+          <div class="dropdown-content">
+            <a href="/page/Gallery.html">Gallery</a>
+            <a href="/page/Blog.html">Blog</a>
+            <a href="/page/faqs.html">FAQs</a>
+          </div>
+        </li>
+        <div class="conli">
+          <i class="fas fa-phone"></i><a href="Tel: +254798384040" style="font-weight: bold;">0798384040</a>
+          <i class="fas fa-envelope"></i><a href="mailto:fedhalandventures@gmail.com">@fedhalandventures</a>
         </div>
-        <script src="/js/script.js"></script>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-      </div>
+      </ul>
       <script>
-        //burger script
         document.addEventListener("DOMContentLoaded", function () {
-          const burger = document.querySelector('.burger');
-          const nav = document.querySelector('.navlinks');
-          const navlinks = document.querySelectorAll('.navlinks li');
-        
-          burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            navlinks.forEach((link, index) => {
-              if (link.style.animation) {
-                link.style.animation = '';
-              } else {
-                link.style.animation = `navlinkFade 0.5s ease ${index / 7 + 0.3}s forwards`;
-              }
-            });
-            burger.classList.toggle('toggles');
-          });
+        const dropdownToggle = document.querySelector(".dropdown-toggle");
+        const dropdownContent = document.querySelector(".dropdown-content");
+
+        dropdownToggle.addEventListener("click", function (event) {
+        event.preventDefault();
+        dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
         });
-        
+        });          
       </script>
-      <div class="toggle-container">
-        <input type="checkbox" id="mode-toggle" class="toggle-checkbox">
-        <label for="mode-toggle" class="toggle-label">
-          <span class="sun-icon">☀️</span>
-          <span class="moon-icon">🌙</span>
-          <div class="toggle-handle"></div>
-        </label>
-      </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const modeToggle = document.getElementById("mode-toggle");
-        const body = document.body;
-
-        modeToggle.addEventListener("change", function() {
-            if (modeToggle.checked) {
-                body.classList.add("black-mode");
-                document.querySelectorAll('.dark-mode-target').forEach(function(div) {
-                    div.classList.add("black-mode");
-                });
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <script>
+      //burger script
+      document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.navlinks');
+        const navlinks = document.querySelectorAll('.navlinks li');
+      
+        burger.addEventListener('click', () => {
+          nav.classList.toggle('nav-active');
+          navlinks.forEach((link, index) => {
+            if (link.style.animation) {
+              link.style.animation = '';
             } else {
-                body.classList.remove("black-mode");
-                document.querySelectorAll('.dark-mode-target').forEach(function(div) {
-                    div.classList.remove("black-mode");
-                });
-              }
+              link.style.animation = `navlinkFade 0.5s ease ${index / 7 + 0.3}s forwards`;
+            }
           });
+          burger.classList.toggle('toggles');
         });
-     </script>
-    </nav>
-</header>
-<div style="height: 9%;"></div> <!-- Create space equal to the header height -->
+      });
+    </script>
+  <div class="toggle-container">
+    <input type="checkbox" id="mode-toggle" class="toggle-checkbox">
+    <label for="mode-toggle" class="toggle-label">
+      <span class="sun-icon">☀️</span>
+      <span class="moon-icon">🌙</span>
+      <div class="toggle-handle"></div>
+    </label>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const modeToggle = document.getElementById("mode-toggle");
+    const body = document.body;
 
+    modeToggle.addEventListener("change", function() {
+        if (modeToggle.checked) {
+            body.classList.add("black-mode");
+            document.querySelectorAll('.dark-mode-target').forEach(function(div) {
+                div.classList.add("black-mode");
+            });
+        } else {
+            body.classList.remove("black-mode");
+            document.querySelectorAll('.dark-mode-target').forEach(function(div) {
+                div.classList.remove("black-mode");
+            });
+          }
+      });
+    });
+  </script>
+  </nav>
+</header>
+<!-- empty div scrolls back to the top  -->
+<div id="home"></div>
+<!-- WhatsApp button float  -->
+<div class="whatsapp-btn">
+  <a href="https://wa.me/+254798384040" target="_blank"><img src="/img/icons/Whatsapp.png" alt="WhatsApp button"></a>
+  <span class="whatsapp-text">WhatsApp Us Now!!</span>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const whatsappBtn = document.querySelector(".whatsapp-btn");
+    const whatsappText = document.querySelector(".whatsapp-text");
+
+    whatsappBtn.addEventListener("mouseenter", function() {
+    whatsappText.style.opacity = "1";
+    whatsappText.style.transform = "translateX(0)";
+    setTimeout(function() {
+    whatsappText.style.opacity = "0";
+    whatsappText.style.transform = "translateX(-20px)";
+    }, 2000);
+    });
+    });
+  </script>
+</div>
+<!-- Scroll back to top btn  -->
+<div class="scroll-button" id="scrollButton">
+  <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+<script>
+  // scroll button show and hide on scrolling
+  window.onscroll = function() {myFunction()};
+  var header = document.getElementById("home");
+  var sticky = header.offsetTop;
+  function myFunction() {
+  if (window.pageYOffset > sticky) {
+    document.getElementById("scrollButton").style.display = "block";
+    } else {
+    document.getElementById("scrollButton").style.display = "none";
+    }
+  }
+</script>
 <!-- Contents -->
 <section class="slider">
     <div class="myslide fade">
-        <div class="txt">
-          <h1></h1>
-          <p>Fedha Land Ventures</p>
-        </div>
         <img src="/img/banner/a.webp" alt="banners">
+    </div>
+      
+      <div class="myslide fade">
+        <img src="/img/banner/b.webp" alt="banners">
       </div>
       
       <div class="myslide fade">
-        <div class="txt">
-          <h1></h1>
-          <p>INVEST WITH US NOW!!</p>
-        </div>
-        <img src="/img/banner/a.webp" alt="banners">
+        <img src="/img/banner/c.webp" alt="banners">
       </div>
       
       <div class="myslide fade">
-        <div class="txt">
-          <h1></h1>
-          <p>WHERE DREAMS FIND THEIR ADDRESS</p>
-        </div>
-        <img src="/img/banner/a.webp" alt="banners">
+        <img src="/img/banner/d.webp" alt="banners">
       </div>
       
       <div class="myslide fade">
-        <div class="txt">
-          <h1></h1>
-          <p>OPENING NEW HORAIZONS IN PROPERTY AQUISITION</p>
-        </div>
-        <img src="/img/banner/a.webp" alt="banners">
+        <img src="/img/banner/e.webp" alt="banners">
       </div>
-      
-      <div class="myslide fade">
-        <div class="txt">
-          <h1></h1>
-          <p>BUY & BUILD NOW</p>
-        </div>
-        <img src="/img/banner/a.webp" alt="banners">
-      </div>
-      <!-- /fade css -->
-      
-      <!-- onclick js -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-      <div class="dotsbox" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
-      <!-- /onclick js -->
-
       <script>
-        const myslide = document.querySelectorAll('.myslide'),
-        dot = document.querySelectorAll('.dot');
-      let counter = 1;
-      slidefun(counter);
-      
-      let timer = setInterval(autoSlide, 8000);
-      function autoSlide() {
-      counter += 1;
-      slidefun(counter);
-      }
-      function plusSlides(n) {
-      counter += n;
-      slidefun(counter);
-      resetTimer();
-      }
-      function currentSlide(n) {
-      counter = n;
-      slidefun(counter);
-      resetTimer();
-      }
-      function resetTimer() {
-      clearInterval(timer);
-      timer = setInterval(autoSlide, 8000);
-      }
-      
-      function slidefun(n) {
-      
-      let i;
-      for(i = 0;i<myslide.length;i++){
+      const myslide = document.querySelectorAll('.myslide');
+let counter = 0; // Start from the first slide
+
+slidefun(counter); // Display the initial slide
+
+let timer = setInterval(autoSlide, 8000);
+
+function autoSlide() {
+    counter = (counter + 1) % myslide.length; // Increment counter and wrap around
+    slidefun(counter);
+}
+
+function plusSlides(n) {
+    counter = (counter + n + myslide.length) % myslide.length; // Ensure counter stays within range
+    slidefun(counter);
+    resetTimer();
+}
+
+function slidefun(n) {
+    for (let i = 0; i < myslide.length; i++) {
         myslide[i].style.display = "none";
-      }
-      for(i = 0;i<dot.length;i++) {
-        dot[i].className = dot[i].className.replace(' active', '');
-      }
-      if(n > myslide.length){
-         counter = 1;
-         }
-      if(n < 1){
-         counter = myslide.length;
-         }
-      myslide[counter - 1].style.display = "block";
-      dot[counter - 1].className += " active";
-      }
+    }
+    myslide[n].style.display = "block";
+}
+
+function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(autoSlide, 8000);
+}
       </script>
+        <!-- Next slider and prev -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </section>
+<!-- sliding word carousel  -->
+
+<div class="carousel-container">
+  <div class="carousel">
+    <div class="text"><p>Invest with Fedha Land Ventures, where your aspirations take flight. Our commitment echoes through an affirmation of "Your Future, Our Mission".  Let Fedha Land Ventures be your beacon of hope and inspiration as we pave the path to your property dreams. Together, we turn aspirations into achievements, and dreams into lifelong investments. Join us, and let's shape the future, one step at a time. </p></div>
+    <div class="text"><p>......Invest with Fedha Land Ventures, where your aspirations take flight. Our commitment echoes through an affirmation of "Your Future, Our Mission".  Let Fedha Land Ventures be your beacon of hope and inspiration as we pave the path to your property dreams. Together, we turn aspirations into achievements, and dreams into lifelong investments. Join us, and let's shape the future, one step at a time. </p></div>
+  </div>
+ </div>
 
 
 <!--Description section  -->
