@@ -728,7 +728,6 @@ article, .cards{
   position: relative;
   border-radius: 10px;
   border: 1px solid #8f8f8f36;
-  background: #fff;
   transform-origin: center;
   transition: all 0.5s linear;
   overflow: hidden;
@@ -870,7 +869,13 @@ article:has(:hover, :focus) {
     display: unset;
   }
 }
-
+article, .cards{
+  background: linear-gradient(135deg, rgba(0, 233, 250, 0.1), rgba(255, 0, 0, 0.137));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.212);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 
 
@@ -1614,7 +1619,11 @@ footer{
   background-color: #141416;
 }
 .black-mode article, .card{
-  background: #141416;
+  background: linear-gradient(135deg, rgba(0, 233, 250, 0.1), rgba(255, 0, 0, 0.137));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.212);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border: .5px solid #333;
 }
 .black-mode .accordion-text li .question-arrow .question{
