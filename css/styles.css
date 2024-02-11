@@ -358,14 +358,10 @@ nav ul li a:hover{
   font-size: unset;
 }
 }
-
-/* body{
-    background-color: #f4f4f4;
-} */
-/* body {
-  background-color: #fff;
-  color: #000; 
-} */
+.toggle-container{
+  all: unset;
+  margin-right: 10px;
+}
 
 
 /* Sliders */
@@ -607,6 +603,7 @@ nav ul li a:hover{
     display: none;
   }
   .toggle-container{
+    margin-right: unset;
     position: absolute;
     scale: 75%;
     top: 2px;
