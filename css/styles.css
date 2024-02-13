@@ -1615,7 +1615,8 @@ footer{
 .black-mode .dropdown-content{
   background-color: #141416;
 }
-.black-mode article, .card{
+.black-mode article, .card,
+.black-mode .reachout .contactForm{
   background: linear-gradient(135deg, rgba(0, 233, 250, 0.1), rgba(255, 0, 0, 0.137));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
