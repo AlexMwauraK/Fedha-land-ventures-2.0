@@ -830,6 +830,9 @@ article:has(:hover, :focus) {
   display: flex;
   justify-content: space-between;
   padding: 20px 25px;
+  min-width: 768px;
+  max-width: 1300px;
+  margin: 0 auto;
   gap: 30px;
 }
 
