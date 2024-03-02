@@ -127,7 +127,6 @@ nav a{
 .navdetail .logo img{
  width: 180px;
  padding: 4px 0;
- mix-blend-mode:multiply;
 }
 .logo{
   margin-left: -5px;
@@ -833,7 +832,7 @@ article:has(:hover, :focus) {
   min-width: 768px;
   max-width: 1300px;
   margin: 0 auto;
-  gap: 30px;
+  gap: 70px;
 }
 
 
@@ -1611,9 +1610,6 @@ footer{
 }
 .black-mode .navigationlinks a {
   color: #fff; 
-}
-.black-mode .navdetail .logo img{
-  mix-blend-mode: luminosity;
 }
 .black-mode .dropdown-content{
   background-color: #141416;
