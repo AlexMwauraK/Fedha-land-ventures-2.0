@@ -1,5 +1,24 @@
+
+.card-div{
+  padding: 0 10px;
+  background-color: #000;
+}
+.articles{
+  padding-top: 120px;
+  background-color: #000;
+}
 article, .cards{
-  /* all: unset; */
   height: unset;
-  height: 600px;
+}
+@media (max-width: 768px){
+  .articles{
+    all: unset;
+    padding-top: 120px;
+    background-color: unset;
+  }
+  .card-div{
+    padding: 0 10px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
 }

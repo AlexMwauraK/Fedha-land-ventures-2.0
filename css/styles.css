@@ -628,7 +628,7 @@ nav ul li a:hover{
     box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.212);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .box2, .box3{
     width: 100%;
